@@ -3,77 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>User Management</title>
     <link rel="stylesheet" href="style/userreg.css">
 </head>
 <body>
-    <div class="container">
-        <h2>User Registration</h2>
-        <div class="form-group">
-        <form action="/admin/user_management" method="post">
-            <div>
-                <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname" required>
-            </div>
 
-            <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            </div>
+    <h1 class="heading">USER MANAGEMENT</h1>
 
-            <div>
-            <label for="role">Role:</label>
-            <select id="role" name="role">
-                <option value="" disabled selected>Select Role</option>
-                <option value="Admin">Admin</option>
-                <option value="Faculty">User</option>
-                <option value="Student">Admin</option>
+    <div class="card">
+        <form>
+            <label for="userid">User ID:</label>
+            <input type="text" id="userid" name="userid" placeholder="Enter User ID">
+
+            <label for="username">Name:</label>
+            <input type="text" id="username" name="username" placeholder="Enter Full Name">
+
+            <label for="useremail">Email:</label>
+            <input type="email" id="useremail" name="useremail" placeholder="Enter Email">
+
+            <label for="usertype">User Type:</label>
+            <select id="usertype" name="usertype">
+                <option value="admin">Admin</option>
+                <option value="faculty">Faculty</option>
+                <option value="student">Student</option>
             </select>
-            </div>
 
-            <div>
-            <label for="Password">Password:</label>
-            <input type="password" id="Password" name="Password" required pattern=".{8,}" title="Eight or more characters">
-            </div>
-
-            <div>
-            <label for="verify Password">Verify Password:</label>
-            <input type="password" id="Password" name="Password" required pattern=".{8,}" title="Eight or more characters">
-            </div>
-
-            <div>
-            <button type="submit" class="button1">Submit</button>
-            <button type="reset" class="button2">Reset</button>
-            </div>
+            <br><br>
+            <button type="submit">Add User</button>
         </form>
-        </div>
-        
-        <h2>Registered Users</h2>
-        <div class="user-list">
-            <table>
-                <thead>
-                    <tr>
-                        <th>S.no</th>
-                        <th>Full Name</th>
-                        <th>Email</th>
-                        <th>Role</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>RAJESH</td>
-                        <td>rajesh@gmail.com</td>
-                        <td>Admin</td>
-                        <td>
-                            <button class="tbutton1">Edit</button>
-                            <button class="tbutton2">Delete</button>
-                        </td>
-                    </tr>
-            </table>
-        </div>
     </div>
-    
+
+    <div class="card">
+        <h3>Existing Users</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>User ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Type</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>U101</td>
+                    <td>Praveen</td>
+                    <td>prav@gmail.com</td>
+                    <td>Admin</td>
+                    <td>
+                        <button>Update</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>U102</td>
+                    <td>Rohit</td>
+                    <td>rohit@gmail.com</td>
+                    <td>Faculty</td>
+                    <td>
+                        <button>Update</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 </body>
 </html>

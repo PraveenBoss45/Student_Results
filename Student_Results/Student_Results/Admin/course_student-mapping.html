@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Course_Student Mapping</title>
+    <link rel="stylesheet" href="style/userreg.css">
+
 </head>
 <body>
-    
+
+    <h1 class="heading">COURSE_STUDENT MAPPING</h1>
+
+    <div class="card">
+        <form action="your-server-endpoint" method="POST">
+            <input type="text" name="studentName" placeholder="Student Name" required>
+            <select name="courseName" required>
+                <option value="">Select Course</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Science">Artificial Intelligence</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="History">Data Structure</option>
+            </select>
+            <button type="submit" name="add">Add Mapping</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Course</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Praveen</td>
+                    <td>Mathematics</td>
+                    <td>
+                        <form action="your-server-endpoint" method="POST" style="display:inline;">
+                            <input type="hidden" name="id" value="1">
+                            <button type="submit" name="update">Update</button>
+                        </form>
+                        <form action="your-server-endpoint" method="POST" style="display:inline;">
+                            <input type="hidden" name="id" value="1">
+                            <button type="submit" name="delete">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Rohit</td>
+                    <td>Data Structure</td>
+                    <td>
+                        <form action="your-server-endpoint" method="POST" style="display:inline;">
+                            <input type="hidden" name="id" value="2">
+                            <button type="submit" name="update">Update</button>
+                        </form>
+                        <form action="your-server-endpoint" method="POST" style="display:inline;">
+                            <input type="hidden" name="id" value="2">
+                            <button type="submit" name="delete">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 </body>
 </html>

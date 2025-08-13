@@ -2,10 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Post Student Marks</title>
+            <link rel="stylesheet" href="style/other.css">
+
 </head>
 <body>
-    
+    <h1>POST STDUENT MARKS</h1>
+
+    <form action="submit_marks.html" method="post">
+        <!-- Student Information -->
+        <label for="student-id">Student ID:</label><br>
+        <input type="text" id="student-id" name="student_id" required><br><br>
+
+        <label for="student-name">Student Name:</label><br>
+        <input type="text" id="student-name" name="student_name" required><br><br>
+
+        <label for="course">Course:</label><br>
+        <input type="text" id="course" name="course" required><br><br>
+
+        <!-- Marks for subjects -->
+        <label for="subject1">Subject 1:</label><br>
+        <input type="text" id="subject1" name="subject1" required><br>
+        <label for="marks1">Marks:</label><br>
+        <input type="number" id="marks1" name="marks1" min="0" max="100" required><br><br>
+
+        <label for="subject2">Subject 2:</label><br>
+        <input type="text" id="subject2" name="subject2" required><br>
+        <label for="marks2">Marks:</label><br>
+        <input type="number" id="marks2" name="marks2" min="0" max="100" required><br><br>
+
+        <label for="subject3">Subject 3:</label><br>
+        <input type="text" id="subject3" name="subject3" required><br>
+        <label for="marks3">Marks:</label><br>
+        <input type="number" id="marks3" name="marks3" min="0" max="100" required><br><br>
+
+        <button type="submit">Post Marks</button>
+    </form>
 </body>
 </html>

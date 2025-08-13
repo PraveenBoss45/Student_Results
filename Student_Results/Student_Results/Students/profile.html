@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Student Profile</title>
     <link rel="stylesheet" href="style/profile.css">
 </head>
 <body>
-    <h1 class="heading">Student Profile</h1>
+
+    <h1 class="heading">STUDENT PROFILE</h1>
+
     <div class="card">
         <table>
-        <tr>
-            <td>
-                <img src="media/student.jpg" alt="Student Image" width=200>
-            </td>
-            <td><p>Welcome to your Student Dashboard<br>View your courses, results, and<br>profile details here.</p></td>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>My Profile</li><li>Enrolled Courses</li><li>View Results</li>
-                </ul>
-            </td>
-        </tr>
-    </table>
-     <table>
-        <tr>
-            <td colspan="2" ><h2>Student Details</h2></td>
-        </tr>
-        <tr>
-            <th>Name</th><td>Rohit Details</th>
-        </tr>
-        <tr>
-            <th>Email</th><td><u>rohit.singh@univ.edu</u>
-        </tr>
-        <tr>
-            <td>Roll no.</td><td>20231234</td>
-        </tr>
-        <tr>
-            <td>Batch</td><td>2023</td>
-        </tr>
-    </table>
+            <tr>
+                <td style="width: 150px;">
+                    <img src="media/student.jpg" alt="Student Photo" class="photo">
+                </td>
+                <td>
+                    <p>
+                        Welcome, <strong>Praveen Kumar</strong>.<br>
+                        You can view your enrolled courses, check results, and update your profile.<br>
+                        Use the dashboard to stay up-to-date with your academic progress.
+                    </p>
+                </td>
+            </tr>
+        </table>
+
+        <h2>Quick Actions</h2>
+        <ul>
+            <li><a href="View_course.html">My Profile</a></li>
+            <li><a href="Result.html">View Result</a></li>
+            <li><a href="report.html">View Report</a></li>
+        </ul>
+
+        <hr>
+
+        <h2>Student Details</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <td>Praveen Kumar</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>praveenkumar@univ.edu</td>
+            </tr>
+            <tr>
+                <th>Roll No.</th>
+                <td>20241234</td>
+            </tr>
+            <tr>
+                <th>Batch</th>
+                <td>2024</td>
+            </tr>
+        </table>
     </div>
-    
+
 </body>
 </html>

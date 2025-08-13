@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Delete Student Result</title>
+            <link rel="stylesheet" href="result.css">
+
 </head>
 <body>
-    
+    <h1>DELETE STUDENT RESULT</h1>
+    <form action="delete_result.html" method="post">
+        <label for="student-id">Student ID:</label><br>
+        <input type="text" id="student-id" name="student_id" required><br><br>
+
+        <label for="student-name">Student Name:</label><br>
+        <input type="text" id="student-name" name="student_name"><br><br>
+
+        <button type="submit">Delete Result</button>
+    </form>
 </body>
 </html>

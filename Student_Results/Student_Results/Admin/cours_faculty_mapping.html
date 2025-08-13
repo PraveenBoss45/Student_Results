@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Course–Faculty Mapping</title>
+    <link rel="stylesheet" href="style/userreg.css">
 </head>
 <body>
-    
+
+    <h1 class="heading">COURSE–FACULTY MAPPING</h1>
+
+    <div class="card">
+        <form>
+            <label for="course">Select Course:</label>
+            <select id="course" name="course">
+                <option value="">-- Choose Course --</option>
+                <option value="c101">C101 - Data Structures</option>
+                <option value="c102">C102 - Operating Systems</option>
+                <option value="c103">C103 - Database Management</option>
+            </select>
+
+            <label for="faculty">Select Faculty:</label>
+            <select id="faculty" name="faculty">
+                <option value="">-- Choose Faculty --</option>
+                <option value="f201">F201 - Dr. Anil Kumar</option>
+                <option value="f202">F202 - Prof. Meera Sharma</option>
+                <option value="f203">F203 - Dr. Rajesh Patel</option>
+            </select>
+
+            <br><br>
+            <button type="submit">Map Course to Faculty</button>
+        </form>
+    </div>
+
+    <div class="card">
+        <h3>Existing Mappings</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Faculty ID</th>
+                    <th>Faculty Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>C101</td>
+                    <td>Data Structures</td>
+                    <td>F201</td>
+                    <td>Dr. Anil Kumar</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>C102</td>
+                    <td>Operating Systems</td>
+                    <td>F202</td>
+                    <td>Prof. Meera Sharma</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 </body>
 </html>
