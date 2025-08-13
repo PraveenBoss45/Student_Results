@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Portal</title>
+    <link rel="stylesheet" href="style/login.css">
+</head>
+<body>
+    <h1>WELCOME FACULTY</h1>
+    <div class="container">
+    <div class="card">
+        <a href="Admin_authent.html">
+            <img src="media/admin.jpeg" height="100px" class="image"><br>
+            Admin
+        </a>
+    </div> 
+    <div class="card">
+        <img src="media/faculty.png" height="200px" class="image"><br>
+        Faculty
+        <form action="Faculty/F_index.html" method="post">
+            <h2>Faculty Login</h2>
+            <label for="faculty-username">Username:</label>
+            <input type="text" id="faculty-username" name="username" required><br><br>
+            
+            <label for="faculty-password">Password:</label>
+            <input type="password" id="faculty-password" name="password" required><br><br>
+            
+            <label for="faculty-code">Code:</label>
+            <input type="text" id="faculty-code" name="code" required><br><br>
+
+            <button type="submit">Login</button>
+        </form>
+        </div>
+        <div class="card">
+        <a href="Stud_authent.html">
+            <img src="media/student.jpeg" height="100px" class="image"><br>
+            Student
+        </a>
+    </div>
+    </div>
+</body>
+</html>

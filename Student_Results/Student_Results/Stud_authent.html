@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/login.css">
+</head>
+<body>
+    <h1>WELCOME STUDENT</h1>
+    <div class="container">
+        <div class="card">
+            <a href="Facul_authent.html"> 
+                <img src="media/faculty.jpg" height="50" class="image"><br>
+                Faculty
+            </a>
+        </div>
+        <div class="card">
+            <img src="media/student.jpg" height="200" class="image"><br>
+            Student
+            <form action="Students/S_index.html" method="post">
+                <h2>Student Login</h2>
+                <label for="faculty-username">Username:</label>
+                <input type="text" id="faculty-username" name="username" required><br><br>
+                
+                <label for="faculty-password">Password:</label>
+                <input type="password" id="faculty-password" name="password" required><br><br>
+                
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="card">
+            <a href="Admin_authent.html">
+                <img src="media/admin.jpeg" height="50" class="image"><br>
+                Admin
+            </a>
+        </div>
+    </div>
+</body>
+</html>
